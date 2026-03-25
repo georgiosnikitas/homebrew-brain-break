@@ -3,7 +3,7 @@ class BrainBreak < Formula
   desc "An AI-powered terminal quiz app"
   homepage "https://github.com/georgiosnikitas/brain-break"
   url "https://github.com/georgiosnikitas/brain-break/archive/refs/tags/v1.6.1.tar.gz"
-  sha256 "629775a78f84c73712e8b3b2e8c13e2a5aed1521f8530e87500ab2c5f96d5395"
+  sha256 "b1a0086823d1c54e3f63ea52a20fdefd61b67052c1220cb93575238ca3d8bb5c"
   license "MIT"
   head "https://github.com/georgiosnikitas/brain-break.git", branch: "main"
 
@@ -15,6 +15,8 @@ class BrainBreak < Formula
 
     system "npm", "install"
     system "npm", "run", "build"
+
+    chmod 0755, "dist/index.js"
 
     libexec.install "dist", "node_modules", "package.json"
 
