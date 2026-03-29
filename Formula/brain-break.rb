@@ -2,8 +2,8 @@
 class BrainBreak < Formula
   desc "An AI-powered terminal quiz app"
   homepage "https://github.com/georgiosnikitas/brain-break"
-  url "https://github.com/georgiosnikitas/brain-break/archive/refs/tags/v1.6.14.tar.gz"
-  sha256 "8fbd3c865f3cde905c9288884c9bb8268410791d8bb1aab71afe2dc6756449f4"
+  url "https://github.com/georgiosnikitas/brain-break/archive/refs/tags/v1.6.15.tar.gz"
+  sha256 "a93f4b2f7e10f19aa0145d7cba11303a9919da4762b383fc4484f3733665075c"
   license "MIT"
   head "https://github.com/georgiosnikitas/brain-break.git", branch: "main"
 
@@ -11,7 +11,7 @@ class BrainBreak < Formula
 
   def install
     node_version = Utils.safe_popen_read(Formula["node"].opt_bin/"node", "--version").strip
-    odie "brain-break requires Node.js >= 25.8.0 (found #{node_version})" if Version.new(node_version.delete_prefix("v")) < Version.new("25.8.0")
+    odie "brain-break requires Node.js >= 22.0.0 (found #{node_version})" if Version.new(node_version.delete_prefix("v")) < Version.new("22.0.0")
 
     system "npm", "install"
     system "npm", "run", "build"
