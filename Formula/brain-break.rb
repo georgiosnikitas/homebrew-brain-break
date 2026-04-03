@@ -2,8 +2,8 @@
 class BrainBreak < Formula
   desc "An AI-powered terminal quiz app"
   homepage "https://github.com/georgiosnikitas/brain-break"
-  url "https://github.com/georgiosnikitas/brain-break/archive/refs/tags/v1.10.2.tar.gz"
-  sha256 "9755a7456e9186564845d95daf4d2d20aacd8723d1d82b2fe35ac348576c06fe"
+  url "https://github.com/georgiosnikitas/brain-break/archive/refs/tags/v1.11.0.tar.gz"
+  sha256 "db98a3414a444f11d6e1f0cf2f3342125c6bbf2c4a2195135fe876d50b994320"
   license "MIT"
   head "https://github.com/georgiosnikitas/brain-break.git", branch: "main"
 
