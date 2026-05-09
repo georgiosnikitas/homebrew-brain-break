@@ -1,11 +1,10 @@
 # Formula for georgiosnikitas/homebrew-brain-break
 class BrainBreak < Formula
   desc "An AI-powered terminal quiz app"
-  homepage "https://github.com/georgiosnikitas/brain-break"
-  url "https://github.com/georgiosnikitas/brain-break/archive/refs/tags/v1.17.4.tar.gz"
-  sha256 "ca59267c6e7c04bc7c6fc9934555ad449718e0f7e000364c114bb5555c8861c7"
+  homepage "https://www.npmjs.com/package/brain-break"
+  url "https://registry.npmjs.org/brain-break/-/brain-break-1.17.5.tgz"
+  sha256 "900e60d69ef83cd6e7ace7691a80773308ecc7eecda35217d47fb01246af41d7"
   license "MIT"
-  head "https://github.com/georgiosnikitas/brain-break.git", branch: "main"
 
   depends_on "node"
 
