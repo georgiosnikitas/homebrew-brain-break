@@ -12,8 +12,7 @@ class BrainBreak < Formula
     node_version = Utils.safe_popen_read(Formula["node"].opt_bin/"node", "--version").strip
     odie "brain-break requires Node.js >= 22.0.0 (found #{node_version})" if Version.new(node_version.delete_prefix("v")) < Version.new("22.0.0")
 
-    system "npm", "install"
-    system "npm", "run", "build"
+    system "npm", "install", "--production"
 
     chmod 0755, "dist/index.js"
 
